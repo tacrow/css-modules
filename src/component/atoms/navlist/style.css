@@ -1,0 +1,11 @@
+.NavList {
+  float: left;
+  padding: 0 15px;
+  border-right: 1px solid #ddd;
+  &:last-child {
+    border-right: 0 none;
+  }
+  a {
+    font-size: 1.1rem;
+  }
+}

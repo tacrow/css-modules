@@ -1,0 +1,12 @@
+/* clf */
+.clf:before,
+.clf:after {
+  content: '';
+  display: table;
+}
+.clf:after {
+  clear: both;
+}
+.clf {
+  *zoom: 1;
+}

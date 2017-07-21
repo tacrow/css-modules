@@ -1,0 +1,21 @@
+.Btn {
+  appiarance: none;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  &___action {
+    background-color: #0088cc;
+    border: 1px solid #0044cc;
+  }
+  &___danger {
+    background-color: #da4f49;
+    border: 1px solid #bd362f;
+  }
+}
