@@ -2,7 +2,7 @@ module.exports = {
   entry: [
     'babel-polyfill',
     './src/style/reset.css',
-    './src/app.jsx'
+    './src/app/app.jsx'
   ],
   output: {
     path: `${__dirname}/public/js`,

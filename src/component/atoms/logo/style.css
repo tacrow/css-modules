@@ -1,0 +1,8 @@
+.Logo {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  a {
+    display: inline-block;
+  }
+}
