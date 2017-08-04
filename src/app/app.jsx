@@ -5,6 +5,7 @@ import {render} from 'react-dom'
 
 // component
 import Header from '../component/organisms/header'
+import Hero from '../component/atoms/hero'
 import Contents from '../component/organisms/contents'
 import Footer from '../component/organisms/footer'
 
@@ -13,6 +14,7 @@ class App extends React.Component {
     return(
       <div>
         <Header />
+        <Hero />
         <Contents />
         <Footer />
       </div>
