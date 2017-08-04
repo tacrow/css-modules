@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: [
     'babel-polyfill',
@@ -38,11 +40,24 @@ module.exports = {
           'css-loader?modules&importLoaders=1&localIdentName=[local]--[hash:base64:5]',
           'postcss-loader',
         ]
+      },
+      {
+        test: /\.(jpg|png|gif|svg|ico)$/,
+        include: [
+          path.resolve(__dirname, './public')
+        ],
+        use: {
+          loader: 'url-loader',
+          options: {
+              limit: 8192,
+              name: './public/img/[name].[ext]'
+          }
+        }
       }
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.css']
+    extensions: ['*', '.js', '.jsx', '.css', '.jpg', '.png', '.gif', '.svg', '.ico']
   },
   devtool: 'source-map'
 };

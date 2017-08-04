@@ -2,7 +2,6 @@
 
 import React from 'react'
 import {render} from 'react-dom'
-import styles from './style.css'
 
 // component
 import Header from '../component/organisms/header'
@@ -12,7 +11,7 @@ import Footer from '../component/organisms/footer'
 class App extends React.Component {
   render() {
     return(
-      <div className={styles.Container}>
+      <div>
         <Header />
         <Contents />
         <Footer />

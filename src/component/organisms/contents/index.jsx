@@ -19,7 +19,7 @@ let MediaList = [
   {
     id: 1,
     thumbnail: {
-      src: './public/img/react.png',
+      src: './public/img/react2.png',
       alt: 'サムネイル2'
     },
     dl:{
@@ -35,6 +35,39 @@ let MediaList = [
     },
     dl:{
       title: 'タイトル3',
+      text: 'テキストテキストテキストテキストテキスト'
+    }
+  },
+  {
+    id: 3,
+    thumbnail: {
+      src: './public/img/react2.png',
+      alt: 'サムネイル4'
+    },
+    dl:{
+      title: 'タイトル4',
+      text: 'テキストテキストテキストテキストテキスト'
+    }
+  },
+  {
+    id: 4,
+    thumbnail: {
+      src: './public/img/react.png',
+      alt: 'サムネイル5'
+    },
+    dl:{
+      title: 'タイトル5',
+      text: 'テキストテキストテキストテキストテキスト'
+    }
+  },
+  {
+    id: 5,
+    thumbnail: {
+      src: './public/img/react2.png',
+      alt: 'サムネイル6'
+    },
+    dl:{
+      title: 'タイトル6',
       text: 'テキストテキストテキストテキストテキスト'
     }
   }

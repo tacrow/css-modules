@@ -1,9 +1,12 @@
 import React from 'react'
 import classNames from 'classnames/bind'
 import styles from './style.css'
+
 // component
 import Logo from '../../atoms/logo'
+import MenuButton from '../../atoms/button/menuButton'
 import NavItem from '../../atoms/navlist'
+import HeaderSearch from '../../atoms/form/headerSearch'
 
 let cx = classNames.bind(styles);
 
@@ -34,25 +37,38 @@ export default class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      NavItems: NavItems
+      menuOpen: false,
     }
   }
 
+  handleClick() {
+    this.setState({menuOpen: !this.state.menuOpen});
+  }
+
   render() {
+    const classNameMenu = cx({
+      Menu: true,
+      Menu___open: this.state.menuOpen,
+    });
+
     return(
       <header className={styles.Header}>
         <Logo />
-        <nav>
+        <MenuButton
+          style={this.state.menuOpen}
+          onClick={() => this.handleClick()} />
+        <nav className={classNameMenu}>
           <ul className={styles.NavLists}>
             {NavItems.map(type => (
               <NavItem
                 key={type.id}
-                link={type.link} 
+                link={type.link}
                 children={type.label}
               />
             ))}
           </ul>
         </nav>
+        <HeaderSearch />
       </header>
     );
   }

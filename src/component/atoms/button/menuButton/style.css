@@ -1,0 +1,20 @@
+.MenuBtn {
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 45px;
+  padding: 5px;
+  background-color: transparent;
+  border: 0 none;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    color: #00d8ff;
+    transition: all .3s;
+  }
+  &___active {
+    color: #00d8ff;
+  }
+}

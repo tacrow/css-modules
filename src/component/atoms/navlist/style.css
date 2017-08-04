@@ -6,7 +6,14 @@
   }
   a {
     padding: 0 15px;
-    color: #00d8ff;
+    color: #fff;
     font-size: 12px;
+    transition: all .3s;
+  }
+  &:hover {
+    a {
+      color: #00d8ff;
+      transition: all .3s;
+    }
   }
 }
