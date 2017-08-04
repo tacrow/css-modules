@@ -1,5 +1,11 @@
 .Thumbnail {
+  overflow: hidden;
   position: relative;
+  background-color: #fff;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  cursor: pointer;
+  &:hover {
+    img { opacity: .8; }
+  }
 }

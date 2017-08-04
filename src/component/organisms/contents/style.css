@@ -1,4 +1,30 @@
 .Contents {
-  margin-top: 54px;
-  margin-bottom: 54px;
+  margin: 54px 10px 10px;
+  box-sizing: border-box;
+}
+
+.Contents {
+  /* clearfix */
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+@media screen and (max-width: 320px) {
+  .Contents {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .Contents {
+    width: 720px;
+    margin: 54px auto 10px;
+  }
 }

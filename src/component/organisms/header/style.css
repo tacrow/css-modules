@@ -13,7 +13,7 @@
   &___open {
     display: block;
   }
-} 
+}
 
 .NavLists {
   position: absolute;
@@ -27,8 +27,8 @@
 .Header,
 .NavLists {
   /* clearfix */
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: '';
     display: table;
   }

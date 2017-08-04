@@ -1,8 +1,12 @@
 .MediaModule {
-  margin: 10px;
+  margin-bottom: 10px;
   padding: 5px;
   background-color: #fff;
   border: 1px solid #ccc;
+  box-sizing: border-box;
+  &:hover {
+    background-color: #f5f5f5;
+  }
 }
 
 .ThumbnailBox {
@@ -19,8 +23,8 @@
 
 .MediaModule {
   /* clearfix */
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: '';
     display: table;
   }
@@ -28,4 +32,16 @@
     clear: both;
   }
   *zoom: 1;
+}
+
+@media screen and (min-width: 720px) {
+  .MediaModule {
+    float: left;
+    width: 355px;
+    // width: 50%;
+    margin-right: 10px;
+    &:nth-child(even) {
+      margin-right:  0;
+    }
+  }
 }

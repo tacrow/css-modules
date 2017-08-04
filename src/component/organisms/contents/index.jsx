@@ -9,7 +9,8 @@ let MediaList = [
     id: 0,
     thumbnail: {
       src: './public/img/react.png',
-      alt: 'サムネイル1'
+      alt: 'サムネイル1',
+      url: ''
     },
     dl: {
       title: 'タイトル1',
@@ -20,7 +21,8 @@ let MediaList = [
     id: 1,
     thumbnail: {
       src: './public/img/react2.png',
-      alt: 'サムネイル2'
+      alt: 'サムネイル2',
+      url: ''
     },
     dl:{
       title: 'タイトル2',
@@ -31,7 +33,8 @@ let MediaList = [
     id: 2,
     thumbnail: {
       src: './public/img/react.png',
-      alt: 'サムネイル3'
+      alt: 'サムネイル3',
+      url: ''
     },
     dl:{
       title: 'タイトル3',
@@ -42,7 +45,8 @@ let MediaList = [
     id: 3,
     thumbnail: {
       src: './public/img/react2.png',
-      alt: 'サムネイル4'
+      alt: 'サムネイル4',
+      url: ''
     },
     dl:{
       title: 'タイトル4',
@@ -53,7 +57,8 @@ let MediaList = [
     id: 4,
     thumbnail: {
       src: './public/img/react.png',
-      alt: 'サムネイル5'
+      alt: 'サムネイル5',
+      url: ''
     },
     dl:{
       title: 'タイトル5',
@@ -64,10 +69,59 @@ let MediaList = [
     id: 5,
     thumbnail: {
       src: './public/img/react2.png',
-      alt: 'サムネイル6'
+      alt: 'サムネイル6',
+      url: ''
     },
     dl:{
       title: 'タイトル6',
+      text: 'テキストテキストテキストテキストテキスト'
+    }
+  },
+  {
+    id: 6,
+    thumbnail: {
+      src: './public/img/react.png',
+      alt: 'サムネイル7',
+      url: ''
+    },
+    dl:{
+      title: 'タイトル7',
+      text: 'テキストテキストテキストテキストテキスト'
+    }
+  },
+  {
+    id: 7,
+    thumbnail: {
+      src: './public/img/react2.png',
+      alt: 'サムネイル8',
+      url: ''
+    },
+    dl:{
+      title: 'タイトル8',
+      text: 'テキストテキストテキストテキストテキスト'
+    }
+  },
+  {
+    id: 8,
+    thumbnail: {
+      src: './public/img/react.png',
+      alt: 'サムネイル9',
+      url: ''
+    },
+    dl:{
+      title: 'タイトル9',
+      text: 'テキストテキストテキストテキストテキスト'
+    }
+  },
+  {
+    id: 9,
+    thumbnail: {
+      src: './public/img/react2.png',
+      alt: 'サムネイル10',
+      url: ''
+    },
+    dl:{
+      title: 'タイトル10',
       text: 'テキストテキストテキストテキストテキスト'
     }
   }
@@ -79,8 +133,8 @@ export default class Contents extends React.Component {
       <div className={styles.Contents}>
       {MediaList.map(type => (
         <MediaModule
-          key={type.id} 
-          thumbnail={type.thumbnail} 
+          key={type.id}
+          thumbnail={type.thumbnail}
           dl={type.dl} />
       ))}
       </div>
