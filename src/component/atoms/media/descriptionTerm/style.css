@@ -1,6 +1,7 @@
 .Title {
   display: inline-block;
   margin-bottom: 5px;
-  font-size: 16px;
+  color: #999;
+  font-size: 14px;
   font-weight: bold;
 }
