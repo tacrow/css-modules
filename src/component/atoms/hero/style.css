@@ -14,3 +14,14 @@
   font-weight: lighter;
   text-align: center;
 }
+
+.SubText {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 414px) and (min-width: 320px) {
+  .SubText {
+    display: block;
+    line-height: 1;
+  }
+}
